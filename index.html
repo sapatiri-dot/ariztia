@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariztia | Cafetería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#inicio" class="logo">Ariztia</a>
+
+    <nav id="nav">
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+      <p class="etiqueta">Café de especialidad</p>
+      <h1>Un buen café,<br>sin ruido.</h1>
+      <p class="subtitulo">Granos seleccionados, espacio simple y tiempo para vos.</p>
+      <a href="#menu" class="boton">Ver menú</a>
+    </section>
+
+    
+        <!-- MENÚ -->
+    <section id="menu" class="seccion">
+      <h2>Menú</h2>
+
+      <div class="menu-layout">
+
+        <div class="menu-foto">
+          <h3>Café y pastelería</h3>
+          <p>Tomate un momento.</p>
+        </div>
+
+        <div class="menu-lista">
+          <div class="filtros">
+            <button class="filtro activo" data-filtro="todos">Todos</button>
+            <button class="filtro" data-filtro="cafe">Café</button>
+            <button class="filtro" data-filtro="frio">Frío</button>
+            <button class="filtro" data-filtro="dulce">Pastelería</button>
+          </div>
+
+          <div class="productos">
+            <article class="producto" data-categoria="cafe">
+              <h3>Espresso</h3>
+              <p>Intenso y corto.</p>
+            
+            </article>
+
+            <article class="producto" data-categoria="cafe">
+              <h3>Flat White</h3>
+              <p>Doble espresso con leche texturizada.</p>
+              
+            </article>
+
+            <article class="producto" data-categoria="cafe">
+              <h3>Cappuccino</h3>
+              <p>Espresso, leche y espuma cremosa.</p>
+              
+            </article>
+
+            <article class="producto" data-categoria="frio">
+              <h3>Cold Brew</h3>
+              <p>Infusionado en frío durante 12 horas.</p>
+              
+            </article>
+
+            <article class="producto" data-categoria="frio">
+              <h3>Iced Latte</h3>
+              <p>Espresso con leche fría y hielo.</p>
+              
+            </article>
+
+            <article class="producto" data-categoria="dulce">
+              <h3>Croissant</h3>
+              <p>De manteca, horneado cada mañana.</p>
+              
+            </article>
+
+            <article class="producto" data-categoria="dulce">
+              <h3>Cheesecake</h3>
+              <p>Con frutos rojos.</p>
+              
+            </article>
+
+            <article class="producto" data-categoria="dulce">
+              <h3>Brownie</h3>
+              <p>Chocolate amargo y nueces.</p>
+              
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="seccion">
+      <h2>Nosotros</h2>
+      <p class="texto-largo">
+        Ariztía nació de una idea simple: que tomar un café sea un momento
+        tranquilo. Trabajamos con productores que cuidan su cosecha y
+        tostamos en pequeños lotes para conservar todo el sabor.
+      </p>
+    </section>
+  
+           <!-- GALERÍA -->
+    <section id="galeria" class="seccion">
+      <h2>Galería</h2>
+      <div class="galeria">
+
+        <figure>
+          <img src="img/foto4.jpg" alt="Granos de café tostados">
+          <figcaption>
+            <h3>Nuestro grano</h3>
+            <p>Café de especialidad tostado en pequeños lotes.</p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/foto2.jpg" alt="Interior de la cafetería">
+          <figcaption>
+            <h3>Nuestro espacio</h3>
+            <p>Un rincón tranquilo para trabajar o charlar.</p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/foto3.jpg" alt="Pastelería del día">
+          <figcaption>
+            <h3>Hecho cada mañana</h3>
+            <p>Pastelería casera para acompañar tu café.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+
+      <div class="contacto-grid">
+        <div class="info">
+          <h3>Horarios</h3>
+          <p>Lunes a viernes: 8:00 a 20:00</p>
+          <p>Sábados y domingos: 9:00 a 21:00</p>
+
+          <h3>Dirección</h3>
+          <p>Padre Arce 137 Godoy Cruz</p>
+
+          <h3>Redes</h3>
+          <p>@ariztia.cafe</p>
+          <h3>Teléfono</h3>
+          <p>+54 261 6624994</p>
+
+          <h3>Email</h3>
+          <p>hola@ariztia.com</p>
+        </div>
+
+        <form id="formulario">
+          <h3>Reservá tu mesa</h3>
+          <input type="text" id="nombre" placeholder="Nombre">
+          <input type="email" id="email" placeholder="Email">
+          <input type="date" id="fecha">
+          <select id="personas">
+            <option value="">Cantidad de personas</option>
+            <option value="1">1 persona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+            <option value="5+">5 o más</option>
+          </select>
+          <button type="submit" class="boton">Reservar</button>
+          <p id="respuesta"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2026 Ariztía. Todos los derechos reservados.</p>
+  </footer>
+
+  <button id="btn-subir" aria-label="Volver arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
