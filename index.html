@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ariztia | Cafetería</title>
+    <meta name="description" content="Ariztía, cafetería de especialidad en Godoy Cruz, Mendoza. Café, pastelería y reservas de mesa.">
+  <meta name="theme-color" content="#1e1410">
+  <meta property="og:title" content="Ariztía | Cafetería">
+  <meta property="og:description" content="Café de especialidad en Godoy Cruz, Mendoza.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -162,20 +168,27 @@
           <h3>Dirección</h3>
           <p>Padre Arce 137 Godoy Cruz</p>
 
-          <h3>Redes</h3>
-          <p>@ariztia.cafe</p>
+          <h3>Redes</h3> 
+          <p><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram @ariztia.cafe</a></p>
           <h3>Teléfono</h3>
           <p>+54 261 6624994</p>
 
           <h3>Email</h3>
-          <p>hola@ariztia.com</p>
+          <p>cafeariztia@gmail.com</p>
         </div>
 
-        <form id="formulario">
+              <form id="formulario" novalidate>
           <h3>Reservá tu mesa</h3>
-          <input type="text" id="nombre" placeholder="Nombre">
-          <input type="email" id="email" placeholder="Email">
+
+          
+          <input type="text" id="nombre" placeholder="Nombre" autocomplete="name">
+
+         
+          <input type="email" id="email" placeholder="Email" autocomplete="email">
+
           <input type="date" id="fecha">
+
+         
           <select id="personas">
             <option value="">Cantidad de personas</option>
             <option value="1">1 persona</option>
@@ -184,8 +197,9 @@
             <option value="4">4 personas</option>
             <option value="5+">5 o más</option>
           </select>
+
           <button type="submit" class="boton">Reservar</button>
-          <p id="respuesta"></p>
+          <p id="respuesta" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -193,8 +207,44 @@
   </main>
 
   <!-- PIE DE PÁGINA -->
-  <footer>
-    <p>© 2026 Ariztía. Todos los derechos reservados.</p>
+   <footer>
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h3>Ariztía</h3>
+        <p>Café de especialidad, pastelería casera y un espacio simple para tomarte tu tiempo.</p>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h3>Enlaces rápidos</h3>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <p>Padre Arce 137, Godoy Cruz, Mendoza</p>
+        <p><a href="mailto:cafeariztia@gmail.com">cafeariztia@gmail.com</a></p>
+        <p>+54 261 662-4994</p>
+        <p><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram @ariztia.cafe</a></p>
+      </div>
+
+    </div>
+
+    <iframe
+      class="footer-mapa"
+      title="Mapa de la ubicación de Ariztía"
+      src="https://www.google.com/maps?q=Padre+Arce+137,+Godoy+Cruz,+Mendoza&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="footer-final">
+      <p>© 2026 Ariztía. Todos los derechos reservados.</p>
+    
+         Desarrollado por <a href="https://github.com/sapatiri-dot" target="_blank" rel="noopener">Sabrina Patiri</a></p>
+    </div>
   </footer>
 
   <button id="btn-subir" aria-label="Volver arriba">↑</button>

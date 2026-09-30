@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sapatiri-dot.github.io/ariztia/sitemap.xml
